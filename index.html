@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="blackjack.css">
+
+</head>
+<body id="body1">
+    <div>
+        <div><h1>Welcome to BlackJack!</h1>
+            <div id="start">
+                <button id="btnstart" type="button" onclick="Start()" class="btn">Start Game</button>
+            </div>
+            <div class="total">Total $<span id="dollars">100</span></div>
+            <div>Bet $<input type="number" id="mybet" value="5" min="1" max ="100"><button id="maxbet" type="button" onclick="maxbet()" class="btn">Max Bet</button>
+                <div>
+                    <button id="btndeal" type="button" onclick="dealNew()" class="btn">Deal</button>
+                </div>
+
+            </div>
+        </div>
+        <div id="message">Push Start</div>
+        
+    <div id="output">
+        Dealer: <span id="dValue"></span>   
+        <div id="dealerHolder"></div>
+        Player:  <span id="pValue"></span>  
+        <div id="playerHolder"></div>
+        <div id="myactions">
+            <button id="btnhold" type="button" onclick="cardAction('hold')" class="btn">Hold</button>
+            <button id="btnhit" type="button" onclick="cardAction('hit')" class="btn">Hit</button>
+            <button id="btndouble" type="button" onclick="cardAction('double')" class="btn">Double</button>
+        </div>
+        
+
+    </div>
+
+    <script src="blackjack.js"></script>
+
+    
+
+    
+</body>
+</html>
